@@ -1,0 +1,85 @@
+html{
+    font-size: 65.5%;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: brown;
+    margin-bottom: 50vh ;
+}
+
+.title{
+font-size: 4.8rem;
+text-align: center;
+}
+
+.title,
+.card_title{
+    font-weight: lighter;
+}
+
+
+.card{
+    
+    width: 30rem;
+    background-color: white;
+    padding: 4rem 3rem 3rem 5rem;
+    box-sizing: border-box;
+
+    position: relative;
+}
+
+.card::before{
+    content: '';
+    display: block;
+    width: 3.4rem;
+    height: 3.4rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+   
+}
+
+.card_title{
+    margin: 0;
+}
+
+.exemplo{
+    width: 0;
+    height: 0;
+    border-top: 15px solid black;
+    border-right:15px solid transparent ;
+    margin-top: 3rem;
+}
+
+.clippath>div{
+    
+    width: 30rem;
+    height: 30rem;
+    margin: 3rem;
+    background-image: repeating-linear-gradient(45deg,yellow 10%, orange 20%);
+}
+
+#d1{
+    clip-path: polygon(0% 0%,100% 0%,0% 100%, 20% 20%);
+}
+
+#d2{
+    clip-path: circle(50% at center);
+}
+
+#d3{
+    clip-path: ellipse(50% 35% at center);
+}
+
+#d4{
+    clip-path: inset(2rem 3rem 4rem 10rem);
+}
+
+#d5{
+    clip-path: inset(3rem round 5rem 2rem);
+}
+
+#d6{
+    clip-path: circle(50% at center 25%);
+}

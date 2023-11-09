@@ -1,0 +1,100 @@
+
+html{
+    font-size: 65.5%;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: brown;
+    margin-bottom: 50vh ;
+}
+
+.title{
+font-size: 4.8rem;
+text-align: center;
+}
+
+.title,
+.card_title{
+    font-weight: lighter;
+}
+
+
+.card{
+    /*width: 35rem;*/
+
+    /*flex-basis: calc(33% - 2.5rem) ;*/
+    flex-basis: clamp(20rem, calc(33% - 2.5rem), 30rem);
+    flex-grow: 1;
+
+    background-image: linear-gradient(135deg, transparent 2.5rem, white 2.5rem);
+    /*box-shadow: 0 0 4px black;     'usando box-shadow ele coloca sombra em toda a caixa.'*/
+    filter: drop-shadow(0 0 4px black); /*'ja utiliznado o filter ele coloca sombra na partes de bacground com cor.'*/
+    padding: 4rem 3rem 3rem 5rem;
+    box-sizing: border-box;
+
+    position: relative;
+}
+
+.card::before{
+    content: '';
+    display: block;
+    width: 3.4rem;
+    height: 3.4rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-image: 
+        linear-gradient(135deg, transparent 2.5rem, #ccc 2.5rem);
+    filter: drop-shadow(2px 2px 3px rgb(0 , 0 , 0 , .4));    
+}
+
+.card_title{
+    margin: 0;
+}
+
+.cards-container{
+    display: flex;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+
+
+
+
+
+/*------------------Passos------------------------------------*/
+
+
+/* Passo 1
+.card{
+    width: 35rem;
+    background-image: linear-gradient(135deg, transparent 2.5rem, white 2.5rem);
+    /*box-shadow: 0 0 4px black;     'usando box-shadow ele coloca sombra em toda a caixa.'
+    filter: drop-shadow(0 0 4px black); 'ja utiliznado o filter ele coloca sombra na partes de bacground com cor.'
+    padding: 4rem 3rem 3rem 5rem;
+    box-sizing: border-box;
+}
+
+  */
+
+  /* Passo 2
+/*.card{
+    width: 35rem;
+    background-image: 
+        linear-gradient(135deg, transparent 2.5rem, #ccc 2.5rem),
+        linear-gradient(135deg, transparent 2.5rem, white 2.5rem);
+    background-size: 3.4rem 3.4rem, 100%;
+    background-repeat: no-repeat;    
+    /*box-shadow: 0 0 4px black;  'usando box-shadow ele coloca sombra em toda a caixa.'
+    filter: drop-shadow(0 0 4px black); 'ja utiliznado o filter ele coloca sombra na partes de bacground com cor.'
+    padding: 4rem 3rem 3rem 5rem;
+    box-sizing: border-box;
+}*/
+
+  
